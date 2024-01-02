@@ -14,7 +14,7 @@ module.exports = {
         },
       },
     ],
-    [
+   [
       // configure PurgeCSS
       "@fullhuman/postcss-purgecss",
       {
@@ -25,7 +25,7 @@ module.exports = {
         ],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: {
-          standard: ["html", "body"],
+          standard: ["html", "body" ,"fade", "alert", "alert-primary", "show"],
         },
       },
     ],
