@@ -16,8 +16,4 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 
 
 <h2>Open issue</h2>
-no bootstrap style for component from react-bootstrap even using the following in postcss.config.js
-
-```
- "./node_modules/react-bootstrap/**/*.js", 
-```
+the style for alert component is working locally but not on vercel
