@@ -15,3 +15,9 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 <p>css/8e19002ffea2efd4.css               3.52 kB</p>
 
 
+<h2>Open issue</h2>
+no bootstrap style for component from react-bootstrap even using the following in postcss.config.js
+
+```
+ "./node_modules/react-bootstrap/**/*.js", 
+```
