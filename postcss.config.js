@@ -22,6 +22,8 @@ module.exports = {
         content: [
           "./src/pages/**/*.{js,jsx,ts,tsx}",
           "./src/components/**/*.{js,jsx,ts,tsx}",
+          // purging CSS in components from React Bootstrap
+          "./node_modules/react-bootstrap/**/*.js", 
         ],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: {
