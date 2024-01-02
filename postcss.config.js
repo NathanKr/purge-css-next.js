@@ -15,31 +15,17 @@ module.exports = {
       },
     ],
     [
+      // configure PurgeCSS
       "@fullhuman/postcss-purgecss",
       {
+        // --- page router
         content: [
-          "./node_modules/react-bootstrap/**/*.js",
+          "./src/pages/**/*.{js,jsx,ts,tsx}",
+          "./src/components/**/*.{js,jsx,ts,tsx}",
         ],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: {
           standard: ["html", "body"],
-          deep: [
-            /^pagination/,
-            /^col/,
-            /^row/,
-            /^container/,
-            /^d-/,
-            /^g-0/,
-            /^text-/,
-            /^align-items-/,
-            /^justify-content-/,
-            /^table/,
-            /^mt-/,
-            /^mb-/,
-            /^basic-navbar-/,
-            /^navbar-/,
-            /^nav-/,
-          ],
         },
       },
     ],
