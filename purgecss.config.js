@@ -1,6 +1,5 @@
-const alertComponentSelectors = ["fade", /alert/g, "show"];
-const navbarComponentSelectors = [/navbar/g];
-const navbarComponentSelectorsGreedy = [/collapsed/];
+const alertComponentSelectors = [/fade/, /alert/, /show/];
+const navbarComponentSelectors = [/navbar/, /collapsed/];
 
 module.exports = {
   content: [
@@ -10,14 +9,8 @@ module.exports = {
   css: ["./node_modules/bootstrap/dist/css/bootstrap.css"],
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   safelist: {
-    standard: [
-      "html",
-      "body",
-      ...alertComponentSelectors,
-      ...navbarComponentSelectors,
-    ],
-    greedy:[...navbarComponentSelectorsGreedy]
+    standard: ["html", "body"],
+    deep: [...alertComponentSelectors, ...navbarComponentSelectors],
   },
   output: "./node_modules/bootstrap/dist/css/bootstrap-with-purgecss.css",
 };
-
