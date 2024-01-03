@@ -15,5 +15,7 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 <p>css/8e19002ffea2efd4.css               3.52 kB</p>
 
 
-<h2>Open issue</h2>
-the style for alert component is working locally but not on vercel
+<h2>next.js caveate</h2>
+<p>using postcss.config.js the style for alert component is working locally but not on vercel (tag 0.2). so i will not use</p>
+<p>using postcss.config.js with next.js is problematic because next.js itself use it internally . so if you want to add you need to add to it all next.js stuff which is not robust</p>
+A better way is simple to use purge.config.js and not postcss.config.js

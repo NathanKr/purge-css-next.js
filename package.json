@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev", 
-    "prebuild": "node scripts/remove-.next.js",
+    "dev": "next dev",
+    "build-css-with-purgecss-cli": "purgecss -c ./purgecss.config.js",
+    "prebuild": "node scripts/remove-.next.js && npm run build-css-with-purgecss-cli",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,14 +18,11 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^9.3.0",
     "typescript": "^5"
   }
 }
