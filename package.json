@@ -23,6 +23,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "purgecss": "^5.0.0",
     "typescript": "^5"
   }
 }
