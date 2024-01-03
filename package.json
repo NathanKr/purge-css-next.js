@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build-css-with-purgecss-cli": "purgecss -c ./purgecss.config.js",
-    "prebuild": "node scripts/remove-.next.js && npm run build-css-with-purgecss-cli",
-    "build": "next build",
+    "prebuild1": "node scripts/remove-.next.js && npm run build-css-with-purgecss-cli",
+    "build": "npm run prebuild1 && next build",
     "start": "next start",
     "lint": "next lint"
   },
