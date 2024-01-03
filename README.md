@@ -6,16 +6,12 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 
 
 <h2>CSS size</h2>
-<p>With purgecss we have 10X smaller css !!! (delete .next directory before npm run build)</p>
-
-<p>without postcss.config.js</p>
-<p>css/2f46408f68d2058a.css               31.4 kB</p>
-
-<p>with postcss.config.js</p>
-<p>css/8e19002ffea2efd4.css               3.52 kB</p>
-
+bootstrap.min.css is 228KB while bootstrap-with-purgecss.css is 14KB thus X20 better !!!
 
 <h2>next.js caveate</h2>
 <p>using postcss.config.js the style for alert component is working locally but not on vercel (tag 0.2). so i will not use</p>
 <p>using postcss.config.js with next.js is problematic because next.js itself use it internally . so if you want to add you need to add to it all next.js stuff which is not robust</p>
-A better way is simple to use purge.config.js and not postcss.config.js
+A better way is simple to use purge.config.js and not postcss.config.js - done in tag 0.3 
+
+<h2>open issues</h2>
+using prebuild did not worked on production (thats why i used prebuild1)

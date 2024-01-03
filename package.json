@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run prebuild1 && next dev",
     "build-css-with-purgecss-cli": "purgecss -c ./purgecss.config.js",
     "prebuild1": "node scripts/remove-.next.js && npm run build-css-with-purgecss-cli",
     "build": "npm run prebuild1 && next build",
