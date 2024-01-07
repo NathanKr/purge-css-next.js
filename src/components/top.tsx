@@ -1,4 +1,3 @@
-import styles from "@/styles/top.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import PageTabs from "@/types/e-page-tabs";
