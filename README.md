@@ -6,16 +6,12 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 
 
 <h2>CSS size</h2>
-bootstrap.min.css is 228KB while bootstrap-with-purgecss.css is 24KB thus X10 better !!!
+bootstrap.min.css is 228KB while bootstrap-with-purgecss.css is 18KB thus X12 better !!!
 
 <h2>next.js caveate</h2>
-<p>using postcss.config.js the style for alert component is working locally but not on vercel (tag 0.2). so i will not use</p>
 <p>using postcss.config.js with next.js is problematic because next.js itself use it internally . so if you want to add you need to add to it all next.js stuff which is not robust</p>
-A better way is simple to use purge.config.js and not postcss.config.js - done in tag 0.3 
+A better way is simple to use purge.config.js and not postcss.config.js - done in tag 0.3 and above
 
-<h2>open issues</h2>
-<ul>
-<li>issue with top using bootstrap-with-purgecss.css --> need ivestigation</li>
-<li>using bootstrap.css (275KB) i get on build css file of 31.2KB. i guess next.js is doing minify but bootstrap.min.css is 228KB so how next.js was able to minify so good ?</li>
-<li>prebuild did not worked on production (thats why i used prebuild1)</li>
-</ul>
+<h2>react-bootstrap caveates</h2>
+it is not working with simple purgecss.config.js because class name are dynamic so i simply dont use it, i use clean bootstrap. this also savethe react-bootstrap js code
+
