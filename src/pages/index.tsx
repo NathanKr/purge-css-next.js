@@ -1,10 +1,8 @@
-import Alert from 'react-bootstrap/Alert';
 
 
 export default function HomePage() {
   return (
     <div className="container">
-      <Alert>This is an alert from react-bootstrap</Alert>
       <div className="row">
         <div className="col-md-6">
           <h1>This Website is Using Bootstrap</h1>
