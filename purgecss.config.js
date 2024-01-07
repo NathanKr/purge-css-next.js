@@ -1,5 +1,3 @@
-const alertComponentSelectors = [/fade/, /alert/, /show/];
-const navbarComponentSelectors = [/navbar/];
 
 module.exports = {
   content: [
