@@ -5,8 +5,10 @@ Following <a href='https://github.com/NathanKr/purge-css-vanilla-playground'>pur
 according to the <a href='https://nextjs.org/docs/pages/building-your-application/configuring/post-css'>documentration</a> next.js use postCSS to create css file in next.js project. So if you want to <a href='Out of the box, with no configuration, Next.js compiles CSS with the following transformations:'>add postCSS plugin</a> you need to configure from scratch all these setting in postcss.config.json \ postcss.config.js
 
 
-<h2>CSS size</h2>
-bootstrap.min.css is 228KB while bootstrap-with-purgecss.css is 18KB thus X12 better !!!
+<h2>reduced CSS file size</h2>
+<p>bootstrap.min.css is 228KB while bootstrap-with-purgecss.css (check bootstrap/dist/css/bootstrap-with-purgecss.css after build) is 18KB thus X12 better !!!</p>
+
+<p>Following build you see css/4ca23750ecaca193.css               4.27 kB which is the total css file and this is the result of gzip</p>
 
 <h2>next.js caveate</h2>
 <p>using postcss.config.js with next.js is problematic because next.js itself use it internally . so if you want to add you need to add to it all next.js stuff which is not robust</p>
