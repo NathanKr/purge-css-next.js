@@ -13,5 +13,5 @@ bootstrap.min.css is 228KB while bootstrap-with-purgecss.css is 18KB thus X12 be
 A better way is simple to use purge.config.js and not postcss.config.js - done in tag 0.3 and above
 
 <h2>react-bootstrap caveates</h2>
-it is not working with simple purgecss.config.js because class name are dynamic so i simply dont use it, i use clean bootstrap. this also savethe react-bootstrap js code
+it is not working with simple purgecss.config.js because class name are dynamic so i simply dont use it, i use clean bootstrap. Using clean bootstrap eliminate react-bootstrap js code
 
