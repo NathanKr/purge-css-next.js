@@ -8,7 +8,8 @@ according to the <a href='https://nextjs.org/docs/pages/building-your-applicatio
 <h2>reduced CSS file size</h2>
 <p>bootstrap.min.css is 228KB while bootstrap-with-purgecss.css (check bootstrap/dist/css/bootstrap-with-purgecss.css after build) is 18KB thus X12 better !!!</p>
 
-<p>Following build you see css/4ca23750ecaca193.css               4.27 kB which is the total css file and this is the result of gzip</p>
+<p>Following build you see css/4ca23750ecaca193.css               4.27 kB which is the total css file and this is the result of next.js gzip</p>
+
 
 <h2>next.js caveate</h2>
 <p>using postcss.config.js with next.js is problematic because next.js itself use it internally . so if you want to add you need to add to it all next.js stuff which is not robust</p>
