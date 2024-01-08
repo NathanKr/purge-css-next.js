@@ -15,3 +15,6 @@ A better way is simple to use purge.config.js and not postcss.config.js - done i
 <h2>react-bootstrap caveates</h2>
 it is not working with simple purgecss.config.js because class name are dynamic so i simply dont use it, i use clean bootstrap. Using clean bootstrap eliminate react-bootstrap js code
 
+<h2>Blog post</h2>
+This repository is used my <a href='https://nathankrasney.com/posts/reduce-css-file-size-for-better-performance'>blog</a>
+
